@@ -11,7 +11,7 @@ int pcbfree(void **pointer)
 	if (pointer && *pointer)
 	{
 		free(*pointer);
-		*pointer = NULL;
+		pointer = NULL;
 		return (1);
 	}
 	return (0);
